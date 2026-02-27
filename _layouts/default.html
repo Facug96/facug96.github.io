@@ -1,31 +1,25 @@
----
-layout: compress
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
 
-{% include base_path %}
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+  <!-- Skeleton (local) -->
+  <link rel="stylesheet" href="{{ '/libs/external/skeleton/normalize.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/libs/external/skeleton/skeleton.css' | relative_url }}">
 
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
+  <!-- Custom -->
+  <link rel="stylesheet" href="{{ '/css/my_css.css' | relative_url }}">
+</head>
+<body>
+  <div class="container">
     {{ content }}
+  </div>
 
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-
-  </body>
+  <script src="{{ '/js/my_js.js' | relative_url }}"></script>
+</body>
 </html>
