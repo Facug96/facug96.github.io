@@ -1,24 +1,11 @@
 projects:
-  - title: "Model Predictive Control for Robot Manipulator"
-    subtitle: "Neural Network-based MPC for a 6-DOF Robot Arm"
-    thumbnail: "assets/projects/robotarm.png"
-    url: "https://iie.fing.edu.uy/publicaciones/2025/BGI25/"
-    selected: y
-
-  - title: "Evaluation  of HPC friendly eigen value algorithms"
-    subtitle: "Testing and evaluation of HPC friendly eigen value algorithms for large sparse matrices"
-    thumbnail: "assets/projects/lanczos.png"
-    url: "assets/pdf/LabFinal_ALN.pdf"
-    selected: y
-
-  - title: "Graph neural networks for Power Flow predictions"
-    subtitle: "Testing of different GNN architectures for Power Flow predictions in transmission networks"
-    thumbnail: "assets/projects/gnn_powerflow.jpg"
-    url: "assets/pdf/AAGRAFOS_2025.pdf"
-    selected: y
-
-  - title: "Helpdesk management system "
-    subtitle: "Personal project built with React (Vite) and FastAPI, using PostgreSQL and JWT authentication to implement a helpdesk management system."
-    thumbnail: "assets/projects/hdp.png"
-    url: "https://github.com/Facug96/helpdesk-app"
-    selected: y
+    - title: "Helpdesk management system "
+      subtitle: "Personal project built with React (Vite) and FastAPI, using PostgreSQL and JWT authentication to implement a helpdesk management system."
+      thumbnail: "assets/projects/hdp.png"
+      url: "https://github.com/Facug96/helpdesk-app"
+      selected: n
+    - title: "Youtube API Pipeline"
+      subtitle: ""
+      thumbnail: "assets/projects/yt-trends.png"
+      url: "https://facug96.github.io/dbt-yt-trending/"
+      selected: y

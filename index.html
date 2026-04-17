@@ -9,7 +9,7 @@ title: Home
 
     Electrical Engineer with experience in machine learning, data analysis, and power systems. My work focuses on developing computational tools and models to analyze complex systems, combining programming, mathematical modeling, and modern ML techniques. I have worked with technologies such as Python, PyTorch, FastAPI, and cloud-based data pipelines.
 
-    I am particularly interested in applied machine learning, scientific computing, and building practical systems that turn data into useful insights. Alongside my technical work, I enjoy exploring music and other creative projects, which help me approach problem-solving from different perspectives.
+    I am particularly interested in applied machine learning, scientific computing, and building practical systems that turn data into useful insights. Alongside my technical work, I enjoy exploring music and other creative projects.
 
   </p>
 
@@ -19,7 +19,7 @@ title: Home
 </div>
 <!-- ========== PROJECTS ==========  -->
 <div class="docs-section" id="projects">
-  <h4>Projects</h4>
+  <h4>Personal projects</h4>
 
   {% for project in site.data.projects.projects %}
     {% assign index_modulo = forloop.index0 | modulo:3 %}
@@ -48,6 +48,38 @@ title: Home
   {% endfor %}
 
 </div>
+<!-- ========== ACADEMIC PROJECTS ==========  -->
+<div class="docs-section" id="projects">
+  <h4>Academic projects</h4>
+
+  {% for project in site.data.academic_projects.projects %}
+    {% assign index_modulo = forloop.index0 | modulo:3 %}
+    {% if index_modulo == 0 %}
+      <div class="row">
+    {% endif %}
+
+      <div class="four columns">
+        <div class="project-container">
+          <div class="project-image-container">
+            <a href="{{ project.url }}">
+              <img src="{{ site.baseurl }}{{ project.thumbnail }}" class="u-max-full-width" />
+            </a>
+          </div>
+
+          <div class="project-caption">
+            <b>{{ project.title }}</b><br/>
+            {{ project.subtitle }}
+          </div>
+        </div>
+      </div>
+
+    {% if index_modulo == 2 or forloop.last %}
+      </div>
+    {% endif %}
+  {% endfor %}
+
+</div>
+
 
 <!-- ========== RESUME ========== -->
 <div class="docs-section" id="resume">
