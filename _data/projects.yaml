@@ -5,7 +5,7 @@ projects:
       url: "https://github.com/Facug96/helpdesk-app"
       selected: n
     - title: "Youtube API Pipeline"
-      subtitle: ""
+      subtitle: "ETL pipeline built with Python, AWS (EventBridge, Lambda, S3, RDS, EC2) and dbt"
       thumbnail: "assets/projects/yt-trends.png"
       url: "https://facug96.github.io/dbt-yt-trending/"
       selected: y
