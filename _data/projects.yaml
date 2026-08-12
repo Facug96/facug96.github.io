@@ -12,5 +12,5 @@ projects:
     - title: "Finance ETL Pipeline"
       subtitle: "ETL pipeline with Airflow as an orchestrator, containerized with Docker"
       thumbnail: "assets/projects/archi.png"
-      url: "https://facug96.github.io/dbt-yt-trending/"
+      url: "https://github.com/Facug96/qversity-data-2026-montevideo-facundogil"
       selected: y
