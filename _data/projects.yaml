@@ -10,7 +10,7 @@ projects:
       url: "https://facug96.github.io/dbt-yt-trending/"
       selected: y
     - title: "Finance ETL Pipeline"
-      subtitle: "ETL pipeline with Airflow as an orchestrator, containerized with Docker"
+      subtitle: "ETL pipeline with Airflow for orchestration, Spark as the processing engine, and dbt for data transformation, containerized with Docker."
       thumbnail: "assets/projects/archi.png"
       url: "https://github.com/Facug96/qversity-data-2026-montevideo-facundogil"
       selected: y
